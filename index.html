@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chart Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://192.168.0.28/Pages/chartmaker/style.css">
+</head>
+<body>
+    <h1>Chart Maker</h1>
+    <h2>Create your own chart</h2>
+    <div class="container">
+        <form class="container_form container_section">
+            <label for="number">How many values would you like typing?</label>
+            <input type="number" name="number" class="container_form_input-count" min="2" max="10" value="2" required>
+            <label>Type your values:</label>
+            <fieldset class="container_form_fieldset">
+            </fieldset>
+            <button class="container_form_button">Generate</button>
+        </form>
+        <div class="container_chart container_section">
+            <input type="text" placeholder="Name your chart" class="container_chart_title" value="New Chart" maxlength="35">
+            <div class="container_chart_display">
+                <div class="chart-line">
+                    <div class="value-fragment"></div>
+                </div>
+                <div class="chart-line">
+                    <div class="value-fragment"></div>
+                </div>
+                <div class="chart-line">
+                    <div class="value-fragment"></div>
+                </div>
+                <div class="chart-line">
+                    <div class="value-fragment"></div>
+                </div>
+                <div class="container_chart_bars">
+                </div>
+            </div>
+            <div class="container_chart_info">
+            </div>
+        </div>
+    </div>
+<script type="text/javascript" src="http://192.168.0.28/Pages/chartmaker/script.js"></script>
+</body>
+</html>
