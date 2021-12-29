@@ -133,7 +133,7 @@ generate_button.addEventListener("click",(e)=>{
     const dataname_inputs = document.querySelectorAll(".dataname_input");
     const value_inputs = document.querySelectorAll(".value_input");
     const color_inputs = document.querySelectorAll(".color_input");
-    validateInputs(dataname_inputs,validate_dataname,1,20)
+    validateInputs(dataname_inputs,validate_dataname)
         .then(() => { return validateValueRange(dataname_inputs,1,25) })
         .then(() => { return validateNumberValues(value_inputs,0,1000000) })
         .then(()=> { return validateInputs(color_inputs,validate_hexcolor) })
